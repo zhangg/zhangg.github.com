@@ -87,43 +87,32 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>标签（空格分隔）： ubuntu14.04 hexo github </p>
+        <p>标签： ubuntu14.04 hexo github </p>
 <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>在安装hexo之前，需要安装如下两个应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
 <li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
 </ul>
 <h3 id="安装Git"><strong>安装Git</strong></h3><p>直接使用命令：sudo apt-get install git-core</p>
-<h3 id="安装Node-js"><strong>安装Node.js</strong></h3><p>推荐使用nvm安装，下载方式如下：<br> $ wget -qO- <a href="https://raw.github.com/creationix/nvm/master/install.sh" target="_blank" rel="external">https://raw.github.com/creationix/nvm/master/install.sh</a> | sh</p>
-<p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> nvm install 0.12<br>（可能版本会更新，我安装时的版本是0.12）</p>
-<h3 id="安装hexo"><strong>安装hexo</strong></h3><blockquote>
-<p>npm install -g hexo-cli</p>
-</blockquote>
+<h3 id="安装Node-js"><strong>安装Node.js</strong></h3><p>推荐使用nvm安装，下载方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure></p>
+<p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvm install <span class="number">0.12</span></span><br><span class="line">（可能版本会更新，我安装时的版本是<span class="number">0.12</span>）</span><br></pre></td></tr></table></figure></p>
+<h3 id="安装hexo"><strong>安装hexo</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="github设置"><strong>github设置</strong></h2><ol>
 <li>申请github账号，这个就不介绍了。</li>
 <li>建立一个仓库，仓库名字为<username>.github.io。比如我的为zhangg.github.io</username></li>
 <li>配置SSH keys。具体的参考github官网给出的<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">步骤</a></li>
 </ol>
-<h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：</p>
-<blockquote>
-<p>hexo init myhexo<br>cd myhexo<br>npm install</p>
-</blockquote>
-<p>随后会在myhexo下生成一些文件，</p>
-<blockquote>
-<p>├── _config.yml<br>├── package.json<br>├── scaffolds<br>├── source<br>|   ├── _drafts<br>|   └── _posts<br>└── themes</p>
-</blockquote>
-<p>其中__config.yml 是配置文件，打开该文件在最下方的<em>deploy</em>部分修改如下内容：</p>
-<blockquote>
-<p>type：git<br>repository: git@github.com:xxx/xxx.github.io.git (即上面建的repo的地址）<br>branch: master</p>
-</blockquote>
-<p>最后，在自己的hexo文件下运行：<br>hexo g<br>hexo d</p>
+<h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myhexo</span><br><span class="line"><span class="built_in">cd</span> myhexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>随后会在myhexo下生成一些文件，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
+<p>其中__config.yml 是配置文件，打开该文件在最下方的<em>deploy</em>部分修改如下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>：git</span><br><span class="line">repository: git@github.com:xxx/xxx.github.io.git (即上面建的repo的地址）</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
+<p>最后，在自己的hexo文件下运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <p>hexo d时有可能遇到错误，遇到错误是运行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
 <p>就可以在<a href="https://xxx.github.io查看自己的blog网站啦。" target="_blank" rel="external">https://xxx.github.io查看自己的blog网站啦。</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicfz4b9n0001xvjx81jfgpf6" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicfzbe7l00010wjxk4tzv2h0" class="article-share-link">Share</a>
       
       
     </footer>
@@ -159,7 +148,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/makedown-user/" data-id="cicfz4b9x0002xvjxninwoz6h" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/makedown-user/" data-id="cicfzbe7r00020wjxviie33qj" class="article-share-link">Share</a>
       
       
     </footer>
@@ -204,7 +193,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/hello-world/" data-id="cicfz4b7e0000xvjxt4gwqccd" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/hello-world/" data-id="cicfzbe4t00000wjxnz70h367" class="article-share-link">Share</a>
       
       
     </footer>
