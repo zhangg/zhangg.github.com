@@ -25,7 +25,7 @@ Git
 
 安装Git直接使用命令：sudo apt-get install git-core
 安装Node.js推荐使用nvm安装">
-<meta property="og:updated_time" content="2015-07-23T09:10:44.434Z">
+<meta property="og:updated_time" content="2015-07-23T09:13:43.962Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu14.04搭建hexo+github博客环境">
 <meta name="twitter:description" content="标签： ubuntu14.04 hexo github 
@@ -115,24 +115,24 @@ Git
 </ul>
 <h3 id="安装Git"><strong>安装Git</strong></h3><p>直接使用命令：sudo apt-get install git-core</p>
 <h3 id="安装Node-js"><strong>安装Node.js</strong></h3><p>推荐使用nvm安装，下载方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure></p>
-<p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nvm install <span class="number">0.12</span></span><br><span class="line">（可能版本会更新，我安装时的版本是<span class="number">0.12</span>）</span><br></pre></td></tr></table></figure></p>
+<p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install <span class="number">0.12</span>（可能版本会更新，我安装时的版本是<span class="number">0.12</span>）</span><br></pre></td></tr></table></figure></p>
 <h3 id="安装hexo"><strong>安装hexo</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="github设置"><strong>github设置</strong></h2><ol>
 <li>申请github账号，这个就不介绍了。</li>
-<li>建立一个仓库，仓库名字为<username>.github.io。比如我的为zhangg.github.io</username></li>
-<li>配置SSH keys。具体的参考github官网给出的<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">步骤</a></li>
+<li>建立一个仓库，仓库名字为<username>.github.io,比如我的为zhangg.github.io。</username></li>
+<li>配置SSH keys。具体的参考github官网给出的<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">步骤</a>。</li>
 </ol>
 <h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myhexo</span><br><span class="line"><span class="built_in">cd</span> myhexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
 <p>随后会在myhexo下生成一些文件，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
 <p>其中__config.yml 是配置文件，打开该文件在最下方的<em>deploy</em>部分修改如下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>：git</span><br><span class="line">repository: git@github.com:xxx/xxx.github.io.git (即上面建的repo的地址）</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
 <p>最后，在自己的hexo文件下运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
 <p>hexo d时有可能遇到错误，遇到错误是运行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>就可以在<a href="https://xxx.github.io查看自己的blog网站啦。" target="_blank" rel="external">https://xxx.github.io查看自己的blog网站啦。</a></p>
+<p>完成了这些，就可以在 <a href="https://xxx.github.io" target="_blank" rel="external">https://xxx.github.io</a> 查看自己的blog网站效果了。</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicfzbe7l00010wjxk4tzv2h0" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicfzf7uy00012wjx4vgbzpr5" class="article-share-link">Share</a>
       
       
     </footer>
