@@ -5,53 +5,69 @@
   
   <title>ubuntu14.04搭建hexo+github博客环境 | Gang&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="标签： ubuntu14.04 hexo github 
-安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
+  <meta name="description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
 
 Node.js
 Git
 
 安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装">
+安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu14.04搭建hexo+github博客环境">
 <meta property="og:url" content="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/index.html">
 <meta property="og:site_name" content="Gang's blog">
-<meta property="og:description" content="标签： ubuntu14.04 hexo github 
-安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
+<meta property="og:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
 
 Node.js
 Git
 
 安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装">
-<meta property="og:updated_time" content="2015-07-23T09:13:43.962Z">
+安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
+<meta property="og:updated_time" content="2015-07-23T10:50:12.197Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu14.04搭建hexo+github博客环境">
-<meta name="twitter:description" content="标签： ubuntu14.04 hexo github 
-安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
+<meta name="twitter:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
 
 Node.js
 Git
 
 安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装">
+安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
+<meta name="twitter:creator" content="@coolwuxing">
   
     <link rel="alternative" href="/atom.xml" title="Gang&#39;s blog" type="application/atom+xml">
   
   
-    <link rel="icon" href="/favicon.png">
+    <link rel="icon" href="/favicon.ico">
   
   <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+  <link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="/css/style.css" type="text/css">
   
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43935113-3', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
 
 </head>
 <body>
   <div id="container">
     <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
+      <div id="header">
+  <div id="banner">
+    <div id="cover"></div>
+    <div id="stars"></div>
+  </div>
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
@@ -83,7 +99,7 @@ Git
       </div>
     </div>
   </div>
-</header>
+</div>
       <div class="outer">
         <section id="main"><article id="post-ubuntu14-04搭建hexo-github博客环境" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
@@ -91,6 +107,10 @@ Git
   <time datetime="2015-07-23T08:59:13.000Z" itemprop="datePublished">2015-07-23</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/blog/">blog</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -107,8 +127,7 @@ Git
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>标签： ubuntu14.04 hexo github </p>
-<h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>在安装hexo之前，需要安装如下两个应用程序：</p>
+        <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>在安装hexo之前，需要安装如下两个应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
 <li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
@@ -132,9 +151,11 @@ Git
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicg1qkhi0001wejxdbxpvcdo" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicg5auf60001k8jxhblaaoos" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
+
     </footer>
   </div>
   
@@ -157,10 +178,31 @@ Git
           <aside id="sidebar">
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/blog/">blog</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a><span class="tag-list-count">1</span></li></ul>
+    </div>
+  </div>
+
   
     
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/hexo/" style="font-size: 10px;">hexo</a>
+    </div>
+  </div>
+
   
     
   <div class="widget-wrap">
@@ -197,15 +239,16 @@ Git
 </aside>
         
       </div>
-      <footer id="footer">
+      <div id="footer">
   
+  <div id='foot-stars'></div>
   <div class="outer">
     <div id="footer-info" class="inner">
       &copy; 2015 zg<br>
       Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
-</footer>
+</div>
     </div>
     <nav id="mobile-nav">
   
