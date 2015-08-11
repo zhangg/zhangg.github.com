@@ -5,34 +5,16 @@
   
   <title>ubuntu14.04搭建hexo+github博客环境 | Gang&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
-
-Node.js
-Git
-
-安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
+  <meta name="description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ubuntu14.04搭建hexo+github博客环境">
-<meta property="og:url" content="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/index.html">
+<meta property="og:url" content="http://yoursite.com/2015/07/23/ubuntu-hexo-github/index.html">
 <meta property="og:site_name" content="Gang's blog">
-<meta property="og:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
-
-Node.js
-Git
-
-安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
-<meta property="og:updated_time" content="2015-07-23T10:50:12.197Z">
+<meta property="og:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。">
+<meta property="og:updated_time" content="2015-08-11T06:38:01.565Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="ubuntu14.04搭建hexo+github博客环境">
-<meta name="twitter:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。在安装hexo之前，需要安装如下两个应用程序：
-
-Node.js
-Git
-
-安装Git直接使用命令：sudo apt-get install git-core
-安装Node.js推荐使用nvm安装，下载方式如下：1$ wget -qO- https://">
+<meta name="twitter:description" content="安装Hexo 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。">
 <meta name="twitter:creator" content="@coolwuxing">
   
     <link rel="alternative" href="/atom.xml" title="Gang&#39;s blog" type="application/atom+xml">
@@ -101,9 +83,9 @@ ga('send', 'pageview');
   </div>
 </div>
       <div class="outer">
-        <section id="main"><article id="post-ubuntu14-04搭建hexo-github博客环境" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-ubuntu-hexo-github" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" class="article-date">
+    <a href="/2015/07/23/ubuntu-hexo-github/" class="article-date">
   <time datetime="2015-07-23T08:59:13.000Z" itemprop="datePublished">2015-07-23</time>
 </a>
     
@@ -127,13 +109,12 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>在安装hexo之前，需要安装如下两个应用程序：</p>
+        <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br><a id="more"></a><br>在安装hexo之前，需要安装如下两个应用程序：</p>
 <ul>
 <li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
+<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a><h3 id="安装Git"><strong>安装Git</strong></h3>直接使用命令：sudo apt-get install git-core<h3 id="安装Node-js"><strong>安装Node.js</strong></h3>推荐使用nvm安装，下载方式如下：<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-<h3 id="安装Git"><strong>安装Git</strong></h3><p>直接使用命令：sudo apt-get install git-core</p>
-<h3 id="安装Node-js"><strong>安装Node.js</strong></h3><p>推荐使用nvm安装，下载方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure></p>
 <p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install <span class="number">0.12</span>（可能版本会更新，我安装时的版本是<span class="number">0.12</span>）</span><br></pre></td></tr></table></figure></p>
 <h3 id="安装hexo"><strong>安装hexo</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 <h2 id="github设置"><strong>github设置</strong></h2><ol>
@@ -141,7 +122,7 @@ ga('send', 'pageview');
 <li>建立一个仓库，仓库名字为<username>.github.io,比如我的为zhangg.github.io。</username></li>
 <li>配置SSH keys。具体的参考github官网给出的<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">步骤</a>。</li>
 </ol>
-<h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myhexo</span><br><span class="line"><span class="built_in">cd</span> myhexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">hexo init myhexo</span><br><span class="line"><span class="built_in">cd</span> myhexo</span><br><span class="line">apt-get install npm</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
 <p>随后会在myhexo下生成一些文件，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
 <p>其中__config.yml 是配置文件，打开该文件在最下方的<em>deploy</em>部分修改如下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>：git</span><br><span class="line">repository: git@github.com:xxx/xxx.github.io.git (即上面建的repo的地址）</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
 <p>最后，在自己的hexo文件下运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
@@ -151,7 +132,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicg5auf60001k8jxhblaaoos" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/ubuntu-hexo-github/" data-id="cid6wy6ln0001i5jxrlgf6qig" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
@@ -162,11 +143,15 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-  
-    <a href="/2015/07/23/makedown-user/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">makedown-user</div>
+    <a href="/2015/08/11/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
     </a>
+  
   
 </nav>
 
@@ -208,7 +193,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -220,15 +205,11 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/2015/07/23/ubuntu14-04搭建hexo-github博客环境/">ubuntu14.04搭建hexo+github博客环境</a>
+            <a href="/2015/08/11/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2015/07/23/makedown-user/">makedown-user</a>
-          </li>
-        
-          <li>
-            <a href="/2015/07/23/hello-world/">Hello World</a>
+            <a href="/2015/07/23/ubuntu-hexo-github/">ubuntu14.04搭建hexo+github博客环境</a>
           </li>
         
       </ul>

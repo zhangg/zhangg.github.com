@@ -84,9 +84,50 @@ ga('send', 'pageview');
       <div class="outer">
         <section id="main">
   
-    <article id="post-ubuntu14-04搭建hexo-github博客环境" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" class="article-date">
+    <a href="/2015/08/11/hello-world/" class="article-date">
+  <time datetime="2015-08-11T06:37:41.961Z" itemprop="datePublished">2015-08-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/11/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="http://hexo.io/">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/08/11/hello-world/#more">Read More</a>
+          </p>
+        
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2015/08/11/hello-world/" data-id="cid6wy6j90000i5jxy1thosre" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-ubuntu-hexo-github" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/07/23/ubuntu-hexo-github/" class="article-date">
   <time datetime="2015-07-23T08:59:13.000Z" itemprop="datePublished">2015-07-23</time>
 </a>
     
@@ -102,7 +143,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/23/ubuntu14-04搭建hexo-github博客环境/">ubuntu14.04搭建hexo+github博客环境</a>
+      <a class="article-title" href="/2015/07/23/ubuntu-hexo-github/">ubuntu14.04搭建hexo+github博客环境</a>
     </h1>
   
 
@@ -110,116 +151,20 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/" target="_blank" rel="external">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>在安装hexo之前，需要安装如下两个应用程序：</p>
-<ul>
-<li><a href="https://nodejs.org/" target="_blank" rel="external">Node.js</a></li>
-<li><a href="http://git-scm.com/" target="_blank" rel="external">Git</a></li>
-</ul>
-<h3 id="安装Git"><strong>安装Git</strong></h3><p>直接使用命令：sudo apt-get install git-core</p>
-<h3 id="安装Node-js"><strong>安装Node.js</strong></h3><p>推荐使用nvm安装，下载方式如下：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ wget -qO- https://raw.github.com/creationix/nvm/master/install.sh | sh</span><br></pre></td></tr></table></figure></p>
-<p>安装成功后，<strong>重启终端</strong>后运行下面命令安装Node.js<br> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvm install <span class="number">0.12</span>（可能版本会更新，我安装时的版本是<span class="number">0.12</span>）</span><br></pre></td></tr></table></figure></p>
-<h3 id="安装hexo"><strong>安装hexo</strong></h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<h2 id="github设置"><strong>github设置</strong></h2><ol>
-<li>申请github账号，这个就不介绍了。</li>
-<li>建立一个仓库，仓库名字为<username>.github.io,比如我的为zhangg.github.io。</username></li>
-<li>配置SSH keys。具体的参考github官网给出的<a href="https://help.github.com/articles/generating-ssh-keys/" target="_blank" rel="external">步骤</a>。</li>
-</ol>
-<h2 id="配置hexo"><strong>配置hexo</strong></h2><p>创建一个自己的hexo文件夹并初始化：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo init myhexo</span><br><span class="line"><span class="built_in">cd</span> myhexo</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
-<p>随后会在myhexo下生成一些文件，<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── <span class="built_in">source</span></span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure></p>
-<p>其中__config.yml 是配置文件，打开该文件在最下方的<em>deploy</em>部分修改如下内容：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">type</span>：git</span><br><span class="line">repository: git@github.com:xxx/xxx.github.io.git (即上面建的repo的地址）</span><br><span class="line">branch: master</span><br></pre></td></tr></table></figure></p>
-<p>最后，在自己的hexo文件下运行：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure></p>
-<p>hexo d时有可能遇到错误，遇到错误是运行如下命令：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure></p>
-<p>完成了这些，就可以在 <a href="https://xxx.github.io" target="_blank" rel="external">https://xxx.github.io</a> 查看自己的blog网站效果了。</p>
-
+        <h2 id="安装"><strong>安装</strong></h2><p><a href="https://hexo.io/">Hexo</a> 是一个快速、简洁、高效的博客框架。Hexo使用Markdown（或者其他渲染引擎）解析文章，在几秒内即可使用靓丽的主体生成静态网页。<br>
+        
+          <p class="article-more-link">
+            <a href="/2015/07/23/ubuntu-hexo-github/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/ubuntu14-04搭建hexo-github博客环境/" data-id="cicg5auf60001k8jxhblaaoos" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2015/07/23/ubuntu-hexo-github/" data-id="cid6wy6ln0001i5jxrlgf6qig" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/hexo/">hexo</a></li></ul>
 
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-makedown-user" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/07/23/makedown-user/" class="article-date">
-  <time datetime="2015-07-23T03:09:13.000Z" itemprop="datePublished">2015-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/23/makedown-user/">makedown-user</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/makedown-user/" data-id="cicg5aufg0006k8jx3p6nq8vs" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2015/07/23/hello-world/" class="article-date">
-  <time datetime="2015-07-23T02:14:15.983Z" itemprop="datePublished">2015-07-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2015/07/23/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2015/07/23/hello-world/" data-id="cicg5auda0000k8jx0v11immh" class="article-share-link">Share</a>
-      
-      
     </footer>
   </div>
   
@@ -263,7 +208,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">八月 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/07/">七月 2015</a><span class="archive-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -275,15 +220,11 @@ ga('send', 'pageview');
       <ul>
         
           <li>
-            <a href="/2015/07/23/ubuntu14-04搭建hexo-github博客环境/">ubuntu14.04搭建hexo+github博客环境</a>
+            <a href="/2015/08/11/hello-world/">Hello World</a>
           </li>
         
           <li>
-            <a href="/2015/07/23/makedown-user/">makedown-user</a>
-          </li>
-        
-          <li>
-            <a href="/2015/07/23/hello-world/">Hello World</a>
+            <a href="/2015/07/23/ubuntu-hexo-github/">ubuntu14.04搭建hexo+github博客环境</a>
           </li>
         
       </ul>
